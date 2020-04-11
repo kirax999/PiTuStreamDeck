@@ -26,10 +26,8 @@ socket: {
 
 function researchFunction(item) {
     var audio = player.play(item, { timeout: 3000 }, function(err){
-        console.log("pop");
         if (err && !err.killed) throw err
     })
-    console.log("finish");
     //audio.kill();
     console.log("id item recus : " + item);
 }
